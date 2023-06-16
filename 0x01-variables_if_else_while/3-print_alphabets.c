@@ -16,7 +16,7 @@ int main(void)
 
 	while (n <= 122)
 	{
-		puthcar(i);
+		putchar(i);
 		i++;
 	}
 
@@ -26,7 +26,7 @@ int main(void)
 		z++;
 	}
 
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
