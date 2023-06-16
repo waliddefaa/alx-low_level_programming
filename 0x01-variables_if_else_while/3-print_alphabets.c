@@ -14,7 +14,7 @@ int main(void)
 	int i = 97;
 	int z = 65;
 
-	while (n <= 122)
+	while (i <= 122)
 	{
 		putchar(i);
 		i++;
