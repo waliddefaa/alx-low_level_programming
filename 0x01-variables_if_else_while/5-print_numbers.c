@@ -1,4 +1,4 @@
-#include<stdio>
+#include<stdio.h>
 
 /**
  * main - Write numbers from 0 to 9
