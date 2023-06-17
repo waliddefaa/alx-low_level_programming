@@ -21,7 +21,7 @@ int main(void)
 
 	for (z = 97; z <= 102; z++)
 	{
-		putchar(m);
+		putchar(z);
 	}
 	putchar('\n');
 
