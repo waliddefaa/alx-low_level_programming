@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * jack_bauer = Writes evry minute of the day of jack bauer
+ * jack_bauer - Writes evry minute of the day of jack bauer
  * Return: ...
  */
 
