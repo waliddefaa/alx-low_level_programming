@@ -5,16 +5,16 @@
  * @s: string to be evaluated
  * Return: the length
  */
+
+
 int _strlen(char *s)
 {
 	int i;
+	int l = 0;
 
-	i = 0;
-
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		i++;
+		l++;
 	}
-
-	return (i);
+	return (l);
 }
