@@ -1,29 +1,28 @@
+#include "main"
+
 /**
  * rev_string - reverses a string
- * @s: inpu
- * Return: Nothing
+ * @s: input
+ * Return: The string in rev
 */
 
 
+
 void rev_string(char *s)
+
 {
-	int i, b, c;
-	char v1, v2;
+	char rev = s[0];
+	int counter = 0;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[counter] != '\0')
+	counter++;
+
+	for (i = 0; i < counter; i++)
 	{
-	}
-
-	b = i - 1;
-	c = 0;
-
-	while (b > i)
-	{
-		v1 = s[c];
-		v2 = s[b];
-		s[c] = v2;
-		s[b] = v1;
-		b--;
-		c++;
+		counter--;
+		rev = s[i];
+		s[i] = s[counter];
+		s[counter] = rev;
 	}
 }
