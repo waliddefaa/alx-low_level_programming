@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strstr - 
- * @haystack: 
- * @needle: 
- * Return: 
+ * _strstr - locates a substring
+ * @haystack: input
+ * @needle: input
+ * Return: pointer to the beginning
  */
 
 
