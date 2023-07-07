@@ -2,7 +2,7 @@
 #define main_header
 
 
-int _res(char *s);
+int _res(char s);
 
 
 #endif
