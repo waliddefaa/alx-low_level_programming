@@ -1,56 +1,51 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
-
-
 /**
- * str_concat - concatenates two strings
+ * str_concat - pointer to a 2 dimensional array of integers
  * @s1: input
  * @s2: input
  * Return: NULL on failure
  */
 
 
-
-
-
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, i, i2, i3;
-	char *output;
+	char *concatenated;
+	int a = 0, b = 0, x = 0, z = 0;
 
-	i = i2 = 0;
-
-	if (s1 != NULL)
-
+	if (s1 == NULL)
 	{
-		a = 0;
-		while (s1[a++] != '\0')
-			i++;
-	}
+		s1 = "";
+		}
+		if (s2 == NULL)
+		{
+			s2 = "";
+		}
+		while (s1[a] != '\0')
+		{
+			a++;
+		}
+		while (s2[b] != '\0')
+		{
+			b++;
+		}
 
-	if (s2 != NULL)
+		concatenated = malloc((a + b + 1) * sizeof(char));
 
-	{
-		a = 0;
-		while (s2[a++] != '\0')
-			i2++;
-	}
+		if (concatenated == NULL)
+		{
+			return (NULL);
+		}
+		for (x = 0; x < a; x++)
+		{
+			concatenated[x] = s1[x];
+		}
+		for (z = 0; z < b; z++)
+		{
+			concatenated[x + z] = s2[z];
+		}
+		concatenated[a + b] = '\0';
 
-	i3 = i + i2;
-
-	output = (char *)malloc(sizeof(char) * (i3 + 1));
-
-	if (output == NULL)
-		return (NULL);
-
-	for (a = 0; a < i; a++)
-		output[a] = s1[a];
-
-	for (b = 0; b < i2; b++, a++)
-		output[i] = s2[b];
-	output[i3] = '\0';
-
-	return (output);
+		return (concatenated);
 }
