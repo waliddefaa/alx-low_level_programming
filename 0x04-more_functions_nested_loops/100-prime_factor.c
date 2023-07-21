@@ -13,8 +13,10 @@ int main(void)
 	for (x = 2; x <= input; x++)
 	{
 		if (input % x == 0)
+		{
 			input /= x;
 			x--;
+		}
 	}
 	printf("%ld\n", x);
 	return (0);
