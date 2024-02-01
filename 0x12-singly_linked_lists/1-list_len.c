@@ -16,7 +16,7 @@ a = h;
 while (a)
 {
 z++;
-a = temp->next;
+a = a->next;
 }
 return (z);
 }
